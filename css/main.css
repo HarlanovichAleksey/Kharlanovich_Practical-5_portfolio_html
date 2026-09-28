@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap');
+
+/* ========== БАЗА ========== */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #fff;
+    background-color: #252525;
+}
+
+.container {
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+/* ========== НАВИГАЦИЯ ========== */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    background: rgba(23, 130, 207, 0.65);
+    backdrop-filter: blur(6px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo i {
+    color: burlywood;
+}
+
+.navigation {
+    display: flex;
+    column-gap: 20px;
+    padding: 15px 0;
+}
+
+.navigation a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: color 0.5s, filter 0.5s;
+}
+
+.navigation:hover a {
+    filter: blur(15px);
+}
+
+.navigation:hover a:hover {
+    filter: blur(0px);
+    color: aqua;
+}
+
+/* ========== ХЕДЕР ========== */
+.header {
+    background: #252525 linear-gradient(150deg, #202020 0%, #2F2F2F 100%);
+    border-bottom-right-radius: 100px;
+    color: #fff;
+    padding: 160px 0 80px;
+}
+
+.header-row {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+}
+
+.header-img {
+    width: 540px;
+    max-width: 100%;
+    border-radius: 80px;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 60px;
+    margin-bottom: 10px;
+}
+
+.header-text {
+    font-weight: 300;
+    font-size: 26px;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+.header-btns {
+    display: flex;
+    column-gap: 20px;
+}
+
+/* ========== КНОПКИ ========== */
+.btn,
+.btn-outline {
+    display: inline-block;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 1;
+    text-decoration: none;
+    cursor: pointer;
+    transition: all 0.4s ease-in;
+    border: 2px solid transparent;
+}
+
+.btn {
+    background-color: #000;
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #1782CF;
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+}
+
+.btn-outline:hover {
+    background-color: #fff;
+    color: #252525;
+}
+
+/* ========== СЕКЦИИ ========== */
+.section-title {
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    font-weight: 300;
+    text-align: center;
+    opacity: 0.7;
+    margin-bottom: 50px;
+}
+
+/* ========== ПОРТФОЛИО ========== */
+.portfolio {
+    padding: 100px 0;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.portfolio-card {
+    background-color: #2F2F2F;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(23, 130, 207, 0.25);
+}
+
+.portfolio-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.portfolio-card-title {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.portfolio-card-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.5;
+    opacity: 0.8;
+}
+
+/* ========== КОНТАКТЫ ========== */
+.contact {
+    padding: 100px 0;
+    background: #1e1e1e;
+}
+
+.contact-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 30px;
+    background-color: #2F2F2F;
+    border-radius: 12px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-item:hover {
+    background-color: #1782CF;
+    transform: translateY(-4px);
+}
+
+.contact-item i {
+    color: burlywood;
+    font-size: 22px;
+}
+
+/* ========== ПОДВАЛ ========== */
+.footer {
+    padding: 30px 0;
+    background: #1a1a1a;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.6;
+}
+
+/* ========== АДАПТИВ ========== */
+@media (max-width: 992px) {
+    .header-row {
+        flex-direction: column;
+        text-align: center;
+        row-gap: 30px;
+    }
+
+    .header-btns {
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 48px;
+    }
+
+    .header-text {
+        font-size: 22px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .nav {
+        gap: 20px;
+    }
+
+    .navigation {
+        column-gap: 12px;
+    }
+
+    .navigation a {
+        font-size: 14px;
+    }
+
+    .header {
+        padding: 140px 0 60px;
+        border-bottom-right-radius: 50px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+
+    .header-text {
+        font-size: 18px;
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .portfolio {
+        padding: 60px 0;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact {
+        padding: 60px 0;
+    }
+
+    .contact-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-item {
+        width: 100%;
+        max-width: 360px;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    .header-text {
+        font-size: 16px;
+    }
+
+    .header-btns {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .btn,
+    .btn-outline {
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 26px;
+    }
+}
