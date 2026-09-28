@@ -20,7 +20,7 @@
 - Google Fonts (Montserrat)
 
 ## Демо
-🔗 [https://harlanovichaleksey.github.io/IP_PracticalWork5/](https://harlanovichaleksey.github.io/IP_PracticalWork5/)
+🔗 [https://harlanovichaleksey.github.io/Kharlanovich_Practical-5_portfolio_html/](https://harlanovichaleksey.github.io/Kharlanovich_Practical-5_portfolio_html/)
 
 ## Файлы
 - `index.html` — разметка сайта;
