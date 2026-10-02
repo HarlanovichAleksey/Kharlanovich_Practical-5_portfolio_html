@@ -12,43 +12,50 @@
     <link rel="stylesheet"
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
+    <!-- Animate 4.1.1 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    
     <!-- Собственные стили -->
     <link rel="stylesheet" href="css/main.css">
 </head>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+    
 <body>
 
     <!-- ========== ШАПКА / НАВИГАЦИЯ ========== -->
     <header class="header">
-        <nav class="nav">
-            <div class="logo">
-                <i class="fa-solid fa-hippo fa-xl fa-fade"></i>
-            </div>
-            <div class="navigation">
-                <a href="#">Главная</a>
-                <a href="#Portfolio">Портфолио</a>
-                <a href="#Contact">Контакты</a>
-            </div>
-        </nav>
+    <nav class="nav">
+        <div class="logo">
+            <i class="fa-solid fa-hippo fa-xl fa-fade"></i>
+        </div>
+        <div class="navigation">
+            <a href="#">Главная</a>
+            <a href="#Portfolio">Портфолио</a>
+            <a href="#Contact">Контакты</a>
+        </div>
+    </nav>
 
-        <div class="container">
-            <div class="header-row">
-                <img src="img/photo.jpg"
-                     srcset="img/photo@2x.jpg 2x"
-                     alt="Илья Муромец"
-                     class="header-img">
+    <div class="container">
+        <div class="header-row">
+            <img src="img/photo.jpg"
+                 srcset="img/photo@2x.jpg 2x"
+                 alt="Илья Муромец"
+                 class="header-img wow animate__animated animate__fadeInLeft">
 
-                <div class="header-desc">
-                    <h1>Илья Муромец</h1>
-                    <p class="header-text">
-                        фрилансер, веб-разработчик,<br> создание сайтов
-                    </p>
-                    <div class="header-btns">
-                        <a href="#Portfolio" class="btn">Портфолио</a>
-                        <a href="#Contact" class="btn-outline">Контакты</a>
-                    </div>
+            <div class="header-desc wow animate__animated animate__fadeInRight">
+                <h1>Илья Муромец</h1>
+                <p class="header-text">
+                    фрилансер, веб-разработчик,<br> создание сайтов
+                </p>
+                <div class="header-btns">
+                    <a href="#Portfolio" class="btn">Портфолио</a>
+                    <a href="#Contact" class="btn-outline">Контакты</a>
                 </div>
             </div>
         </div>
+    </div>
     </header>
 
     <!-- ========== ПОРТФОЛИО ========== -->
@@ -58,19 +65,19 @@
             <p class="section-subtitle">Мои последние работы</p>
 
             <div class="portfolio-grid">
-                <article class="portfolio-card">
+                <article class="portfolio-card wow animate__animated animate__zoomIn">
                     <img src="img/photo.jpg" alt="Проект 1" class="portfolio-img">
                     <h3 class="portfolio-card-title">Корпоративный сайт</h3>
                     <p class="portfolio-card-text">Вёрстка и адаптив под мобильные устройства.</p>
                 </article>
 
-                <article class="portfolio-card">
+                <article class="portfolio-card wow animate__animated animate__zoomIn" data-wow-delay="0.2s">
                     <img src="img/photo.jpg" alt="Проект 2" class="portfolio-img">
                     <h3 class="portfolio-card-title">Интернет-магазин</h3>
                     <p class="portfolio-card-text">Каталог, корзина, оформление заказа.</p>
                 </article>
 
-                <article class="portfolio-card">
+                <article class="portfolio-card wow animate__animated animate__zoomIn" data-wow-delay="0.4s">
                     <img src="img/photo.jpg" alt="Проект 3" class="portfolio-img">
                     <h3 class="portfolio-card-title">Лендинг</h3>
                     <p class="portfolio-card-text">Одностраничный сайт с анимацией.</p>
@@ -86,15 +93,15 @@
             <p class="section-subtitle">Свяжитесь со мной удобным способом</p>
 
             <div class="contact-list">
-                <a href="mailto:ilya@example.com" class="contact-item">
+                <a href="mailto:ilya@example.com" class="contact-item wow animate__animated animate__fadeInUp">
                     <i class="fa-solid fa-envelope"></i>
                     <span>ilya@example.com</span>
                 </a>
-                <a href="tel:+79990000000" class="contact-item">
+                <a href="tel:+79990000000" class="contact-item wow animate__animated animate__fadeInUp" data-wow-delay="0.15s">
                     <i class="fa-solid fa-phone"></i>
                     <span>+7 (999) 000-00-00</span>
                 </a>
-                <a href="https://t.me/example" class="contact-item" target="_blank" rel="noopener">
+                <a href="https://t.me/example" class="contact-item wow animate__animated animate__fadeInUp" data-wow-delay="0.3s" target="_blank" rel="noopener">
                     <i class="fa-brands fa-telegram"></i>
                     <span>@example</span>
                 </a>
