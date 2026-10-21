@@ -42,7 +42,7 @@
 - `img/` — фотографии и изображения проектов.
 
 ## Демо
-🔗 [https://harlanovichaleksey.github.io/Kharlanovich_Practical5/](https://harlanovichaleksey.github.io/Kharlanovich_Practical5/)
+🔗 [https://harlanovichaleksey.github.io/Kharlanovich_Practical-5_portfolio_html/](https://harlanovichaleksey.github.io/Kharlanovich_Practical-5_portfolio_html/)
 
 ## Контрольные точки адаптива
 - **> 992px** — 3 карточки портфолио в ряд, фото и текст в хедере в одну строку;
