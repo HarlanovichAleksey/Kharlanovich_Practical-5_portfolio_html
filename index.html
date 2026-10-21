@@ -36,6 +36,11 @@
                      class="header-img wow animate__animated animate__fadeInLeft">
 
                 <div class="header-desc wow animate__animated animate__fadeInRight">
+                    <!-- Таймер -->
+                    <div class="header-timer">
+                        <p class="header-timer-text">до конца дня осталось</p>
+                        <samp class="header-timer-clock" id="countdown">00 : 00 : 00</samp>
+                    </div>
                     <h1>Харланович<br>Алексей</h1>
                     <p class="header-text">
                         фрилансер, веб-разработчик,<br> создание сайтов
@@ -109,9 +114,9 @@
 
     <!-- WOW.js init -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script> new WOW().init(); </script>
+    <!-- Таймер -->
+    <script src="js/timer.js"></script>
 
 </body>
 </html>
